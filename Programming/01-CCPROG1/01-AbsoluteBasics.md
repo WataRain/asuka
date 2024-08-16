@@ -4,7 +4,7 @@ title: The Absolute Basics of Programming
 
 > :link: [CCPROG1 Index](index.md)
 > :memo: If you're just starting out, then don't worry too much! Immerse yourself slowly and steadily.
-> 
+
 # The Absolute Basics of Programming
 
 **Programming is a form of problem solving.** However, what sets apart programming from the usual problem solving is that we must create solutions that are understood by both computers and humans, instead of only the latter. Take the following scenario, for example:

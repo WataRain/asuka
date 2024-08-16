@@ -1,7 +1,6 @@
 ---
-title: Index
+title: Asuka
 ---
-# Asuka
 
 [Inspired by Misaki,](https://lowestofthe1ow.github.io/misaki-quartz/) this is a knowledge repository primarily drawing upon the various courses I have taken in De La Salle University. This is being made in the hopes of being a useful "second-brain" of some sort, not only to remember what has been previously said but also to interconnect the teachings of various disciplines. Keep in mind that [I am a BSCS-ST student,](https://www.dlsu.edu.ph/colleges/ccs/undergraduate-degree-programs/cs-st/) so the courses seen here may not represent the entirety of the university.
 

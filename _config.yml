@@ -5,5 +5,7 @@ relative_links:
   enabled: true
   collections: true
 remote_theme: pages-themes/cayman@v0.2.0
-title: Asuka
-description: Personal knowledge base 
+description: Asuka
+markdown: GFM
+plugins:
+  - jemoji
