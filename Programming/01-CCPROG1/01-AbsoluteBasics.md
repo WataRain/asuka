@@ -3,6 +3,7 @@ title: The Absolute Basics of Programming
 ---
 
 > :link: [CCPROG1 Index](index.md)
+>
 > :memo: If you're just starting out, then don't worry too much! Immerse yourself slowly and steadily.
 
 # The Absolute Basics of Programming
@@ -53,7 +54,7 @@ Programming languages have the ability of being able to be translated into *mach
 
 In CCPROG1, the focus is on creating programs (via the C programming language) to solve problems. This entails building up logic skills to reason about various scenarios. This almost always involves processing a given input into an expected output, like so:
 
-$$Input \rarr [Program] \rarr Output$$
+$$Input \rightarrow [Program] \rightarrow Output$$
 
 *The proverbial **black box** model of programming.*
 

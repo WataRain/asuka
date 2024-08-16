@@ -1,5 +1,6 @@
 ---
 title: Asuka
+layout: home
 ---
 
 [Inspired by Misaki,](https://lowestofthe1ow.github.io/misaki-quartz/) this is a knowledge repository primarily drawing upon the various courses I have taken in De La Salle University. This is being made in the hopes of being a useful "second-brain" of some sort, not only to remember what has been previously said but also to interconnect the teachings of various disciplines. Keep in mind that [I am a BSCS-ST student,](https://www.dlsu.edu.ph/colleges/ccs/undergraduate-degree-programs/cs-st/) so the courses seen here may not represent the entirety of the university.
@@ -44,4 +45,60 @@ With that said, unlike Misaki, courses are arranged not necessarily in chronolog
 # Graph view
 Admittedly, even then, each "series" is interconnected, so there is some vagueness when it comes to defining such: the internal folder structure that orders these courses are based on the flowchart, but may not necessarily reflect exactly how the university sees it. Therefore, this repository provides a graphical index to achieve a more flexible organization of courses. The resulting graph below is based from the flowchart and is generated using a Python application:
 
-(TBA)
+<pre class="mermaid">
+---
+title: ID 123 BSCS-ST (AY 2023-2024)
+---
+graph LR
+classDef has_status stroke:#0f0
+subgraph y1_t1 ["Y1T1"]
+ccprog1["CCPROG1"]
+mth101_a["MTH101A"]
+gematmw["GEMATMW"]
+gepcomm["GEPCOMM"]
+nstp101["NSTP101"]
+end
+subgraph y1_t2 ["Y1T2"]
+ccprog2["CCPROG2"]
+ccicomp["CCICOMP"]
+ccdstru["CCDSTRU"]
+csmath1["CSMATH1"]
+pe1_crdo_geftwel["PE1CRDO GEFTWEL"]
+lcfilia["LCFILIA"]
+nstp_01["NSTP-01"]
+lasare["LASARE"]
+end
+subgraph y1_t3 ["Y1T3"]
+ccprog3["CCPROG3"]
+ccdsalg["CCDSALG"]
+csmath2["CSMATH2"]
+stt101_a["STT101A"]
+pe2_ftex_gedance["PE2FTEX GEDANCE"]
+gestsoc["GESTSOC"]
+sas1000["SAS1000"]
+nstp_02["NSTP-02"]
+end
+subgraph y2_t1 ["Y2T1"]
+ccinfom["CCINFOM"]
+csadprg["CSADPRG"]
+csalgcm["CSALGCM"]
+gesport["GESPORT"]
+lcasean["LCASEAN"]
+csintsy["CSINTSY"]
+end
+ccprog1 ---> ccprog2
+mth101_a ---> csmath1
+nstp101 ---> nstp_01
+ccprog2 ---> ccprog3
+ccdstru -.-> ccdsalg
+ccprog2 -.-> ccdsalg
+mth101_a ---> csmath2
+nstp_01 ---> nstp_02
+ccprog2 ---> ccinfom
+ccprog3 ---> csadprg
+ccdsalg ---> csalgcm
+ccdstru ---> csintsy
+ccdsalg ---> csintsy
+
+click ccprog1 "Programming/01-CCPROG1"
+</pre>
