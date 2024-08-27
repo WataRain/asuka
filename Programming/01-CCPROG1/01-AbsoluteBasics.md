@@ -1,20 +1,16 @@
 ---
-title: The Absolute Basics of Programming
+title: Hello, World: The Absolute Basics of Programming
 ---
 
 > :link: [CCPROG1 Index](index.md)
->
-> :memo: If you're just starting out, then don't worry too much! Immerse yourself slowly and steadily.
 
-# The Absolute Basics of Programming
+# Hello, World:  The Absolute Basics of Programming
 
 **Programming is a form of problem solving.** However, what sets apart programming from the usual problem solving is that we must create solutions that are understood by both computers and humans, instead of only the latter. Take the following scenario, for example:
 
 > :question: Which is the highest number among these: 3, 5, 1, 0, or 999?
 
 The answer is obviously 999, but a computer does not have the common sense to say what we have so easily observed. Instead, computers follow a *program* or a series of instructions executed by a computer, and *programming* is to create such programs via a programming language.
-
-(In the grand scheme of things, [programs don't have to be self-contained:](../03-CCPROG3/01-IntroToOOP.md) programs can exist as *subprograms* or generally as parts of a bigger program, such as in complex applications like web browsers, video games, and artificial intelligence applications.)
 
 ## Programming Languages
 
@@ -48,7 +44,7 @@ There are many different programming languages, each serving their own purposes.
 
 *The programming process for C*
 
-Programming languages have the ability of being able to be translated into *machine code*, which is a binary representation that machines can understand. It varies how exactly (human-readable) code in a particular programming language gets translated into machine code. In C, programs are first *compiled* into machine code (via a C compiler such as GCC) and the machine code is then executed (more on this soon).
+Programming languages have the ability of being able to be translated into *machine code*, which is a binary representation that machines can understand. It varies how exactly (human-readable) code in a particular programming language gets translated into machine code. In C, programs are first *compiled* into machine code (via a C compiler such as [gcc](https://gcc.gnu.org/)) and the machine code is then executed (more on this soon).
 
 ## The Programming Process
 
@@ -58,7 +54,25 @@ $$Input \rightarrow [Program] \rightarrow Output$$
 
 *The proverbial **black box** model of programming.*
 
-It is up to us programmers to create a program which transforms expected inputs into desired outputs. Ideally, the resulting program would be a *black box*, where users do not really have to know how the program works, only that it does work correctly.
+It is up to us programmers to create a program which transforms expected inputs into desired outputs, and one way to do it is to follow these steps (cyclically):
+
+1. Problem Analysis
+   * Identify inputs and outputs
+2. Algorithm Design
+   * Design an algorithm that is definite, exact, logical, and clear
+3. Implementation
+   * Implement the algorithm via code (such as in `ANSI C`)
+4. Testing and Debugging
+   * Create specific test cases in your program ("when x is 5, this function must...")
+   * Verify that these test cases work
+   * Debug your code by fixing bugs that are discovered
+5. Documentation and Maintenance
+  * User's Manual: guide on how to use the program
+  * Technical Manual: how the program was designed/created
+  * Internal Documentation: comments to inform others (and future you) about your code
+   
+
+Ideally, the resulting program would be a *black box*, where users do not really have to know how the program works, only that it does work correctly.
 
 ### Integrated Development Environment (IDE)
 
@@ -68,7 +82,40 @@ When it comes to actually writing programs, programmers tend to program in an *i
 
 CCPROG1 introduces [Dev-C++ as a beginner-friendly IDE;](https://www.bloodshed.net/) there are many alternatives, however, such as [the popular Visual Studio Code (VSCode)](https://code.visualstudio.com/). Those more comfortable with programming may opt to use text editors such as [Vim, a "highly configurable text editor"](https://www.vim.org/) or even the venerable Notepad included by default on Windows!
 
-> Next: [Hello, World!](02-HelloWorld.md)
+> Don't worry too much about IDEs if you're a beginner, though -- focus on what's truly important: programming and problem solving! With that said...
+
+## Hello, World!
+
+[hello.c](program\hello.c)
+```c
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello world!\n");
+    return 0;
+}
+```
+
+This is a "Hello World" program -- perhaps the most iconic program in any programming language. The end result is a program that greets you by saying "Hello world!":
+
+![A terminal window with "Hello world!" written](src/helloworld.png)
+
+Compile your program via `gcc`, supplying in the path to your C source file, like so:
+
+```
+gcc hello.c
+```
+
+By default, `gcc` compiles your program and outputs it to a file named `a`, so just run your program like this:
+
+```
+a
+```
+
+> :warning: Some command-line shells (such as PowerShell) require you to prefix an executable with `./`, so if the above doesn't work, try typing `./a` instead.
+
+> Next: [The Different Parts of C Code](02-CLanguage.md)
+
 
 ## Terms Used
 1. programming

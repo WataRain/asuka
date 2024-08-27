@@ -1,5 +1,6 @@
 ---
 title: CCICOMP
 ---
-# Computing/01-CCICOMP/index
+# Introduction to Computing (CCICOMP)
 
+TBA

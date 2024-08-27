@@ -4,8 +4,8 @@ title: CCPROG1
 # Logic Formulation and Introductory Programming (CCPROG1)
 
 ## Table of Contents
-1. [The Absolute Basics of Programming](01-AbsoluteBasics.md)
-2. [Hello, World!](02-HelloWorld.md)
+1. [Hello, World: The Absolute Basics of Programming](01-AbsoluteBasics.md)
+2. [The Different Parts of C Code](02-CLanguage.md)
 
 ## Supplemental References
 
@@ -17,3 +17,6 @@ title: CCPROG1
 * [Picture credits](https://wfp.asrvd.me/app/)
 
 ![alt text](src/Meteora_Österreich_Holding_C_Programming_Language.png)
+
+
+
