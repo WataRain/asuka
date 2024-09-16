@@ -6,7 +6,7 @@ title: The Different Parts of C Code
 
 # The Different Parts of C Code
 
-Many programmers begin their journey by writing a "Hello World" program. In C, that looks like this:
+Regardless of language, many programmers begin their journey by writing a "Hello World" program. In C, that looks like this:
 
 [hello.c](program\hello.c)
 ```c
@@ -52,21 +52,65 @@ int add(int x, int y) {
 
 *Statements* are the building block of functions. They can call other functions (e.g., `printf("Hello world!\n");`) and return values (e.g., `return 0;`), among other things. In C, all statements must end with a `semi-colon (;)`.
 
-> :construction: The following parts are under construction!
-
 ## Tokens
 
-Tokens are the atomic parts of code, and are basically the "words" which comprise it.
+Tokens are the atomic parts of code, and are basically the "words" which comprise it. Every single one of these tokens are parsed and understood by the compiler in order to generate the corresponding executable file.
+
+There are many different types of tokens:
+
+1. Identifiers
+2. Keywords
+3. Literals
+4. Operators
 
 ### Identifiers
 
+Identifiers are the IDs or names given to a variable, function, or constant. Examples include:
+* `main` in `int main(void)`{:.language-c .highlight}
+* `add`, `x`, and `y` in `int add(int x, int y)`{:.language-c .highlight}.
+
+#### Valid Identifier Naming Rules
+
+1. Unique
+2. Case-sensitive
+3. Can't start with a number
+4. Can't contain spaces
+5. Can't use keywords
+
 ### Keywords
+
+Keywords are words reserved by the C language itself and already have defined meanings to them:
+* `int` means integer
+* `return` means to return a value from a function
+* `printf` is a function reserved by the `<stdio.h>` header
+* `if` and `else` are used to control a program's *control flow*, or how to deal with certain conditions
+* [See Microsoft's list of C keywords here](https://learn.microsoft.com/en-us/cpp/c-language/c-keywords?view=msvc-170)
+
+> :construction: The following parts are under construction!
 
 ### Literals
 
+Literals always have the same value in every program, e.g., `1` will always be one.
+
+* Numeric literals are integers like `1` or floating point (decimal) numbers lke `3.45`.
+* Non-numeric literals 
+   * Character literals are single-character values like `'a'`, `'b'`, and `'c'`. They are bounded in single-quote marks (`'`).
+     * Take note: the backslash (`\`) character is the *escape character*. Certain *escape sequences* can be made with `\`, like `'\n'` which is considered one character and therefore a valid character literal. `'\n'` stands for **n**ewline (basically, pressing "enter").
+   * String literals are multiple-character values like `"Hello world!"`.
+
 ### Operators
 
+Operators perform operations on operands, such as addition, assignment, and comparison, among others.
+
+1. Assignment
+2. Arithmetic
+   a.  `+`, `-`, `*`, and `/` 
+3. Logical
+
+
 ## Expressions
+
+Together, tokens make up expressions.
 
 ## Terms Used
 1. pre-processor directive

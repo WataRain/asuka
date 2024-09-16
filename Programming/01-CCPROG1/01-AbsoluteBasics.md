@@ -1,5 +1,5 @@
 ---
-title: Hello, World: The Absolute Basics of Programming
+title: Hello, World - The Absolute Basics of Programming
 ---
 
 > :link: [CCPROG1 Index](index.md)
@@ -114,9 +114,6 @@ a
 
 > :warning: Some command-line shells (such as PowerShell) require you to prefix an executable with `./`, so if the above doesn't work, try typing `./a` instead.
 
-> Next: [The Different Parts of C Code](02-CLanguage.md)
-
-
 ## Terms Used
 1. programming
 2. problem solving
@@ -131,3 +128,5 @@ a
 11. machine code
 12. black box
 13. integrated development environment (IDE)
+
+> Next: [The Different Parts of C Code](02-CLanguage.md)
