@@ -9,11 +9,10 @@ With that said, unlike Misaki, courses are arranged not necessarily in chronolog
 
 ## Programming Series
 1. [Logic Formulation and Introductory Programming (CCPROG1)](Programming/01-CCPROG1/index.md)
-   * (The only page with content as of the moment.)
+   * [(Bonus) C Survival Guide](Programming/C-SURVIVAL/index.md)
 2. [Programming with Structured Data Types (CCPROG2)](Programming/02-CCPROG2/index.md)
 3. [Object Oriented Programming (CCPROG3)](Programming/03-CCPROG3/index.md)
 4. [Advanced Programming (CSADPRG)](Programming/04-CSADPRG/index.md)
-
 ## Algorithms Series
 1. [Discrete Structures (CCDSTRU)](Algorithms/01-CCDSTRU/index)
 2. [Data Structures and Algorithms (CCDSALG)](Algorithms/02-CCDSALG/index.md)

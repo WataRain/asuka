@@ -42,11 +42,9 @@ relative_links:
 
 theme: minima
 
-minima:
-  skin: dark
-
 header_pages:
   - Programming/01-CCPROG1/index.md
+  - Programming/C-SURVIVAL/index.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
